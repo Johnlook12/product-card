@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 1440px;
+  background-color: hsl(30, 38%, 92%);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  height: 350px;
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 180px;
+}
+.mobile_image {
+  display: none;
+}
+.input-wrapper {
+  position: relative;
+  top: 20px;
+  right: 20px;
+}
+
+#cart {
+  color: #fff;
+  left: -100%;
+  transform: translateX(300%);
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 0px 10px 10px 0px;
+  padding-left: 25px;
+  padding-top: 18px;
+}
+.desktop_image {
+  border-radius: 10px 0px 0px 10px;
+}
+.header__p {
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat";
+  font-size: 10px;
+  letter-spacing: 5px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.header__h2 {
+  font-family: "Fraunces", serif;
+  font-size: 24px;
+  width: 70%;
+  margin-bottom: 15px;
+}
+.description__p {
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  width: 75%;
+  margin-bottom: 20px;
+}
+.prices {
+  display: flex;
+  flex-direction: row;
+}
+.prices__h3 {
+  flex-grow: 0.1;
+  font-size: 25px;
+  font-family: "Fraunces";
+  color: hsl(158, 43%, 27%);
+}
+.prices__p {
+  color: hsl(228, 12%, 48%);
+  font-size: 12px;
+  margin-top: 8px;
+}
+.button {
+  margin-top: 20px;
+  padding: 13px 10px;
+  width: 90%;
+  margin: auto;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 600;
+  border-radius: 8px;
+}
+.button:hover {
+  background-color: hwb(158 15% 61%);
+}
+@media (max-width: 420px) {
+  .mobile_image {
+    display: inline-block;
+  }
+  .desktop_image {
+    display: none;
+  }
+}
+@media (max-width: 420px) {
+  body {
+    width: 375px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+  }
+  .description {
+    border-radius: 0px 0px 10px 10px;
+  }
+  .mobile_image {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .button {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 30px;
+  }
+  .description__p {
+    font-size: 25px;
+  }
+  .header__h2 {
+    font-size: 30px;
+  }
+  .prices__h3 {
+    font-size: 40px;
+  }
+  .prices__p {
+    font-size: 25px;
+    margin-top: 11px;
+  }
+  .header__p {
+    font-size: 25px;
+  }
+  #cart {
+    transform: scale(2) translateX(200%);
+  }
+  .input-wrapper {
+    padding-bottom: 20px;
+  }
+}
